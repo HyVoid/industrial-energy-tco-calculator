@@ -83,14 +83,19 @@ export const Sidebar: React.FC<SidebarProps> = ({
       <div className="lg:hidden sticky top-0 z-40 w-full h-[56px] bg-white border-b border-[#E8E8E6] px-4 flex items-center justify-between shadow-sm">
         <div
           onClick={() => handleTabClick('01_Home')}
-          className="flex items-center gap-2 cursor-pointer"
+          className="flex items-center gap-2.5 cursor-pointer"
         >
-          <div className="w-7 h-7 rounded-lg bg-[#051C2C] flex items-center justify-center text-white">
+          <div className="w-7 h-7 rounded-lg bg-[#051C2C] flex items-center justify-center text-white shrink-0">
             <Zap className="w-4 h-4 text-[#2251FF]" />
           </div>
-          <span className="font-garamond text-[15px] font-bold text-[#051C2C] line-clamp-1">
-            Energy Cost & TCO Toolkit
-          </span>
+          <div className="flex flex-col">
+            <span className="font-garamond text-[16px] font-bold text-[#051C2C] leading-none">
+              Theseus Workshop
+            </span>
+            <span className="text-[10px] font-mono text-[#888888] tracking-tight mt-0.5">
+              industrial-energy-tco-calculator
+            </span>
+          </div>
         </div>
 
         <button
@@ -125,13 +130,12 @@ export const Sidebar: React.FC<SidebarProps> = ({
             <div className="w-9 h-9 rounded-xl bg-[#051C2C] flex items-center justify-center text-white shrink-0 transition-transform group-hover:scale-105 shadow-sm">
               <Zap className="w-5 h-5 text-[#2251FF]" />
             </div>
-            <div className="flex flex-col">
-              <span className="font-garamond text-[16px] font-bold text-[#051C2C] leading-snug">
-                Industrial Energy Cost & TCO Toolkit
+            <div className="flex flex-col min-w-0">
+              <span className="font-garamond text-[18px] font-bold text-[#051C2C] leading-tight tracking-tight">
+                Theseus Workshop
               </span>
-              <span className="text-[10px] font-semibold text-[#888888] tracking-wider uppercase mt-1 flex items-center gap-1">
-                <ShieldCheck className="w-3 h-3 text-[#2251FF]" />
-                Decision Support
+              <span className="text-[11px] font-mono text-[#888888] tracking-tight mt-1 truncate">
+                industrial-energy-tco-calculator
               </span>
             </div>
           </div>

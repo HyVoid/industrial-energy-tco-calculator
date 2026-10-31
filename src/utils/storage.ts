@@ -47,7 +47,7 @@ export function exportBackupJSON(data: AppDataState): void {
   const a = document.createElement('a');
   a.href = url;
   const timestamp = new Date().toISOString().slice(0, 10);
-  a.download = `energy_cost_comparison_backup_${timestamp}.json`;
+  a.download = `industrial-energy-tco-calculator-backup-${timestamp}.json`;
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
